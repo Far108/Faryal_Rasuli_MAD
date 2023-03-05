@@ -5,7 +5,7 @@ fun main() {
     var guessed = false
 
     while (!guessed) {
-        println("Guess a 4-digit number with no repeating digits:8576")
+        println("Guess a 4-digit number with no repeating digits:")
         val guess = readLine()
         if (guess != null && guess.length == 4 && guess.toSet().size == 4) {
             val result = checkGuess(guess, answer)
